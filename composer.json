@@ -1,0 +1,13 @@
+{
+    "name": "hfdbkm/brain",
+    "bin": ["bin/brain-games"],
+    "description": "fphexletphp",
+    "type": "project",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Hfdbkm\\Brain\\": "src/"
+        }
+    },
+    "require": {}
+}
