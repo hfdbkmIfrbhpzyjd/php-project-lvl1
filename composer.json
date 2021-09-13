@@ -1,11 +1,17 @@
 {
     "name": "hfdbkm/brain",
-    "bin": ["bin/brain-games"],
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even"
+    ],
     "description": "fphexletphp",
     "type": "project",
     "license": "proprietary",
     "autoload": {
-        "files": ["src/Cli.php"]
+        "files": [
+            "src/Cli.php",
+            "src/brain-even-functions.php"
+        ]
     },
     "require": {
         "wp-cli/php-cli-tools": "^0.11.13"
