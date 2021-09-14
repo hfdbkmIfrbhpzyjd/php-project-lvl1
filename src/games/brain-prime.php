@@ -7,16 +7,14 @@ use function cli\prompt;
 
 function isPrime($num)
 {
-    $check = True; 
-    for ($i = 2; $i < $num; $i++)
-    {
-        if ($num % $i == 0) 
-        {
-             $check = False;
+    $check = true;
+    for ($i = 2; $i < $num; $i++) {
+        if ($num % $i == 0) {
+             $check = false;
              break;
-        }               
+        }
     }
-   return $check;
+    return $check;
 }
 
 function roundPrime()
