@@ -5,7 +5,7 @@ namespace Brain\Games\Prime;
 use function cli\line;
 use function cli\prompt;
 
-function isPrime($num)
+function isPrime($num): bool
 {
     $check = true;
     for ($i = 2; $i < $num; $i++) {
@@ -17,7 +17,7 @@ function isPrime($num)
     return $check;
 }
 
-function roundPrime()
+function roundPrime(): string
 {
     $num = rand(2, 100);
     $expected = isPrime($num) ? 'yes' : 'no';
@@ -31,7 +31,7 @@ function roundPrime()
     }
 }
 
-function game($numOfGames)
+function game(int $numOfGames): string
 {
     line('Answer "yes" if given number is prime. Otherwise answer "no".');
     for ($i = 0; $i < $numOfGames; $i++) {

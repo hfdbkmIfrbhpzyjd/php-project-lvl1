@@ -4,7 +4,7 @@ namespace Brain\Games\Engine;
 
 use function cli\line;
 
-function result($res, $name)
+function result(string $res, string $name): void
 {
     if ($res === 'win') {
         line('Congratulations, %s!', $name);

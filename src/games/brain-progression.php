@@ -5,7 +5,7 @@ namespace Brain\Games\Progression;
 use function cli\line;
 use function cli\prompt;
 
-function roundPr()
+function roundPr(): string
 {
     $base = rand(0, 100);
     $step = rand(0, 100);
@@ -27,7 +27,7 @@ function roundPr()
     }
 }
 
-function game($numOfGames)
+function game(int $numOfGames): string
 {
     line('Find the greatest common divisor of given numbers.');
     for ($i = 0; $i < $numOfGames; $i++) {

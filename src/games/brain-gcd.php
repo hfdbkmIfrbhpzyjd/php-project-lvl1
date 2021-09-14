@@ -5,12 +5,12 @@ namespace Brain\Games\Gcd;
 use function cli\line;
 use function cli\prompt;
 
-function gcd($a, $b)
+function gcd($a, $b): int
 {
     return ($a % $b) ? gcd($b, $a % $b) : $b;
 }
 
-function roundGcd()
+function roundGcd(): string
 {
     $num1 = rand(0, 100);
     $num2 = rand(0, 100);
@@ -25,7 +25,7 @@ function roundGcd()
     }
 }
 
-function game($numOfGames)
+function game(int $numOfGames): string
 {
     line('Find the greatest common divisor of given numbers.');
     for ($i = 0; $i < $numOfGames; $i++) {

@@ -1,4 +1,4 @@
-name: Lint
+name: MyLint
 
 on:
   # Trigger the workflow on push or pull request,
@@ -18,6 +18,6 @@ jobs:
     steps:
       - name: Run linters
         run: 
-          make lint
+        composer exec --verbose phpcs -- --standard=PSR12 src bin
 
 

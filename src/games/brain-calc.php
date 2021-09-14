@@ -5,7 +5,7 @@ namespace Brain\Games\Calc;
 use function cli\line;
 use function cli\prompt;
 
-function calc($operation, $num1, $num2)
+function calc(string $operation, int $num1, int $num2): int
 {
     switch ($operation) {
         case '+':
@@ -20,7 +20,7 @@ function calc($operation, $num1, $num2)
     }
 }
 
-function roundCalc()
+function roundCalc(): string
 {
     $num1 = rand(0, 100);
     $num2 = rand(0, 100);
@@ -37,7 +37,7 @@ function roundCalc()
     }
 }
 
-function game($numOfGames)
+function game(int $numOfGames): string
 {
     line('What is the result of the expression?');
     for ($i = 0; $i < $numOfGames; $i++) {

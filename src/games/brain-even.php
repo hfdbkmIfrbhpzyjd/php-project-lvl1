@@ -5,7 +5,7 @@ namespace Brain\Games\Even;
 use function cli\line;
 use function cli\prompt;
 
-function even($var)
+function even(int $var): bool
 {
     return !($var & 1);
 }
@@ -24,7 +24,7 @@ function roundEven()
     }
 }
 
-function game($numOfGames)
+function game(int $numOfGames): string
 {
     line('Answer "yes" if the number is even, otherwise answer "no".');
     for ($i = 0; $i < $numOfGames; $i++) {
