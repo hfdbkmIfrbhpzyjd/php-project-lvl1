@@ -19,7 +19,7 @@ function isPrime($num)
 
 function roundPrime()
 {
-    $num = rand(0, 100);
+    $num = rand(2, 100);
     $expected = isPrime($num) ? 'yes' : 'no';
     line('Question: ' . (string) $num);
     $answer = prompt('Your answer: ');
