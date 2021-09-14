@@ -13,11 +13,4 @@ function greetings()
     return $name;
 }
 
-function result($res, $name)
-{
-    if ($res === 'win') {
-        line('Congratulations, %s!', $name);
-    } elseif ($res === 'lose') {
-        line('Let\'s try again, %s!', $name);
-    }
-}
+
