@@ -2,7 +2,8 @@
     "name": "hfdbkm/brain",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "description": "fphexletphp",
     "type": "project",
@@ -10,7 +11,9 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/brain-even-functions.php"
+            "src/Engine.php",
+            "src/games/brain-even-functions.php",
+            "src/games/brain-calc-functions.php"
         ]
     },
     "require": {

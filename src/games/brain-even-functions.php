@@ -24,14 +24,14 @@ function roundEven()
     }
 }
 
-function gameEven($numOfGames)
+function game($numOfGames)
 {
     line('Answer "yes" if the number is even, otherwise answer "no".');
     for ($i = 0; $i < $numOfGames; $i++) {
         $result = roundEven();
         if ($result === 'win') {
             line('Correct!');
-        } else if ($result === 'lose') {
+        } elseif ($result === 'lose') {
             return 'lose';
         }
     }
