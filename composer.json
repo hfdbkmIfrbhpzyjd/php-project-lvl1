@@ -3,7 +3,8 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "description": "fphexletphp",
     "type": "project",
@@ -12,8 +13,9 @@
         "files": [
             "src/Cli.php",
             "src/Engine.php",
-            "src/games/brain-even-functions.php",
-            "src/games/brain-calc-functions.php"
+            "src/games/brain-even.php",
+            "src/games/brain-calc.php",
+            "src/games/brain-gcd.php"
         ]
     },
     "require": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Brain\Games\CalcFunc;
+namespace Brain\Games\Calc;
 
 use function cli\line;
 use function cli\prompt;
@@ -27,7 +27,7 @@ function roundCalc()
     $operations = ['*', '-', '+'];
     $operation = $operations[array_rand($operations)];
     $expected = calc($operation, $num1, $num2);
-    line('Question: ' . (string) $num1 . $operation . (string) $num2);
+    line('Question: ' . (string) $num1 . ' ' . $operation . ' ' . (string) $num2);
     $answer = (int) prompt('Your answer: ');
     if ($expected === $answer) {
         return 'win';
