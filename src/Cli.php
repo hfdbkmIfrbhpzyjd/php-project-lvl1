@@ -12,5 +12,3 @@ function greetings()
     line("Hello, %s!", $name);
     return $name;
 }
-
-
