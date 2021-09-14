@@ -10,13 +10,10 @@ function calc(string $operation, int $num1, int $num2): int
     switch ($operation) {
         case '+':
             return $num1 + $num2;
-            break;
         case '-':
             return $num1 - $num2;
-            break;
         case '*':
             return $num1 * $num2;
-            break;
     }
 }
 

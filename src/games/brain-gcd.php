@@ -5,9 +5,9 @@ namespace Brain\Games\Gcd;
 use function cli\line;
 use function cli\prompt;
 
-function gcd($a, $b): int
+function gcd(int $a, int $b): int
 {
-    return ($a % $b) ? gcd($b, $a % $b) : $b;
+    return ($a % $b) >= 1 ? gcd($b, $a % $b) : $b;
 }
 
 function roundGcd(): string

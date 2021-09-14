@@ -7,10 +7,10 @@ use function cli\prompt;
 
 function even(int $var): bool
 {
-    return !($var & 1);
+    return ($var & 1) === 0 ? true : false;
 }
 
-function roundEven()
+function roundEven(): string
 {
     $num = rand(0, 100);
     $expected = even($num) ? 'yes' : 'no';

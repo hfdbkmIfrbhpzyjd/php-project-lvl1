@@ -5,7 +5,7 @@ namespace Brain\Games\Prime;
 use function cli\line;
 use function cli\prompt;
 
-function isPrime($num): bool
+function isPrime(int $num): bool
 {
     $check = true;
     for ($i = 2; $i < $num; $i++) {
