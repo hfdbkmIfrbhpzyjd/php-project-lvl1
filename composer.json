@@ -1,5 +1,5 @@
 {
-    "name": "hfdbkm/brain",
+    "name": "hexlet/code",
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
