@@ -1,14 +1,24 @@
 {
     "name": "hexlet/code",
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even",
+        "bin/brain-calc",
+        "bin/brain-gcd",
+        "bin/brain-progression",
+        "bin/brain-prime"
     ],
     "description": "hexlet-php-project-1",
     "autoload": {
-        "psr-4": {
-            "Chel\\Php1\\": "src/"
-        },
-        "files": ["src/Cli.php"]
+        "files": [
+            "src/Cli.php",
+            "src/Engine.php",
+            "src/games/brain-even.php",
+            "src/games/brain-calc.php",
+            "src/games/brain-gcd.php",
+            "src/games/brain-progression.php",
+            "src/games/brain-prime.php"
+        ]
     },
     "authors": [{
         "name": "Chel",

@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+use Brain\Games\Even;
+use Brain\Games\Cli;
+use Brain\Games\Engine;
+
+$name = Cli\greetings();
+$numberOfGames = 3;
+$result = Even\game($numberOfGames);
+Engine\result($result, $name);
