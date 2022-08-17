@@ -1,0 +1,14 @@
+{
+    "name": "hexlet/code",
+    "description": "hexlet-php-project-1",
+    "autoload": {
+        "psr-4": {
+            "Chel\\Php1\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "Chel",
+        "email": "hfdbkmIfrbhpzyjd@gmail.com"
+    }],
+    "require": {}
+}
